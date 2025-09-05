@@ -93,6 +93,11 @@ h1, h2, h3 {
 h1 { font-size: 50px; }
 h2 { font-size: 40px; }
 h3 { font-size: 35px; }
+h4 { font-size: 20px }
+
+h4 {
+    color: #22C55E
+}
 
 h1:hover, h2:hover {
     color: green;
@@ -145,6 +150,7 @@ form label {
 }
 
 form input, form textarea {
+    text-align: center;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -154,11 +160,16 @@ form button {
     background-color: #222;
     color: white;
     padding: 10px;
-    cursor: pointer
+    cursor: pointer;
 }
 
 form button:hover {
     background-color: #22C55E;
+}
+
+legend {
+    color: #22C55E;
+    font-size: 22px
 }
 
 footer {

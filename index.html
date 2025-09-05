@@ -98,15 +98,52 @@
 
         <section id="contato">
             <h2>Caso queira entrar em contato com o criador:</h2>
+            <hr>
             <form>
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" required />
+                <p>
+                <label for="nome">Nome:</label> <br>
+                <input type="text" id="nome" name="nome" required autofocus autocomplete="on" placeholder="Luiz Felipe" />
+                </p>
+                
+                <p>
+                <label for="email">E-mail:</label> <br>
+                <input type="email" id="email" name="email" required autofocus autocomplete="on" placeholder="emailaqui@gmail.com" />
+                </p>
 
-                <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email" required />
+                <p>
+                <label for="mensagem">Mensagem:</label> <br>
+                <textarea id="mensagem" name="mensagem" required autofocus autocomplete="on" placeholder="Escreva sua mensagem aqui!"></textarea>
+                </p>
 
-                <label for="mensagem">Mensagem:</label>
-                <textarea id="mensagem" name="mensagem" required></textarea>
+                <p>
+                <label for="telefone"> Telefone:</label> <br>
+                <input type="text" maxlength="15" 
+                required autofocus autocomplete="on" placeholder="(99) 99999-9999">
+                <input type="reset" value="Limpar">
+                </p>
+
+                <fieldset>
+                    <legend>Você gosta de Giannis Antetokounmpo?</legend>
+                    <input type="radio" name="Giannis" id="rdSim" value="p">
+                    <label for="rdSim">Sim <br> </label>
+
+                    <input type="radio" name="Giannis" id="rdNão" value="w">
+                    <label for="rdNão">Não <br> </label> 
+                </fieldset>
+                
+                <legend>Aceite os termos de uso de dados</legend>
+                <label>
+                  <input type="checkbox" name="Aceito" id="chkaceito" value="p">
+                  Aceito os termos de uso de dados
+                </label>
+            
+                <h4>Escolha um apelido de Giannis Antetokounmpo</h4>
+                <br>
+                <select name="Idioma do Apelido" id="slcidiomadoapelido">
+                    <option value="Giannis"> Greek Freak</option>
+                    <option value="Giannis"> Aberração Grega</option>
+                    <br>
+                </select>
 
                 <button type="submit">Enviar</button>
             </form>
