@@ -1,111 +1,23 @@
-* {
+/* ===========================
+   RESET E CONFIGURAÇÕES GERAIS
+   =========================== */
+   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif; /* Fonte principal da minha página */
+    font-family: Arial, sans-serif;
 }
 
 body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: #1a1a1a; 
+    background-color: #1a1a1a;
 }
 
-nav {
-    position: sticky;
-    top: 0;
-    background-color: rgb(0, 100, 38);
-    padding: 15px 20px;
-}
-
-nav ul li a {
-    color: #FFFFFF; /* Texto do header */
-}
-
-nav ul li a:hover {
-    color: #22C55E;
-}
-
-main {
-    flex: 1;
-    padding: 20px;
-    background-image: url("./images/Giannis-Antetokounmpo-Wallpaper-Free-Download-1.jpg");
-    background-size: cover;
-    background-position: center;
-}
-
-nav > ul {
-    list-style-type: none;
-    color: lightgreen;
-    font-size: 30px;
-    max-width: 300px;
-    display: flex;
-    gap: 250px;
-}
-
-#home {
-    background: url("./images/063_1367457228.jpg") center / cover no-repeat;
-    background-position: top;
-    color: rgb(255, 255, 255);
+section {
+    padding: 80px 20px;
     text-align: center;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-#conquistas-profissionais{
-    text-align: center;
-    color: #22C55E;
-}
-
-#conquistas-profissionais > ul {
-    display: inline-block;
-    text-align: left;
-    font-size: 18px;
-    text-shadow: 1px 1px 2px black;
-}
-
-.imagem {
-    text-align: center;
-    margin: 20px 0;
-}
-
-.imagem img {
-    max-width: 300px;
-    max-height: 200px;
-    margin: 0 auto;
-    border-radius: 8px;
-    width: 300px;
-    height: 200px;
-    padding: 10px;
-}
-
-h1, h2, h3 {
-    color: #22C55E;
-    text-shadow: 1px 1px 2px black;
-    text-align: center;
-    margin: 10px 0;
-}
-
-h1 { font-size: 50px; }
-h2 { font-size: 40px; }
-h3 { font-size: 35px; }
-h4 { font-size: 20px }
-
-h4 {
-    color: #22C55E
-}
-
-h1:hover, h2:hover {
-    color: green;
-}
-
-h1 a {
-    text-decoration: none;
-    color: inherit;
 }
 
 p {
@@ -121,6 +33,93 @@ label {
     color: #22C55E;
 }
 
+legend {
+    color: #22C55E;
+    font-size: 22px;
+}
+
+figcaption {
+    color: green;
+}
+
+/* ===========================
+   TIPOGRAFIA
+   =========================== */
+h1, h2, h3 {
+    color: #22C55E;
+    text-shadow: 1px 1px 2px black;
+    text-align: center;
+    margin: 10px 0;
+}
+
+h1 { font-size: 50px; }
+h2 { font-size: 40px; }
+h3 { font-size: 35px; }
+
+h4 {
+    font-size: 20px;
+    color: #22C55E;
+}
+
+h1:hover, h2:hover {
+    color: green;
+}
+
+h1 a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Primeira letra dos parágrafos específicos */
+#p1:first-letter,
+#p2:first-letter {
+    font-size: 2em;
+    font-weight: bold;
+    color: rgb(0, 100, 38);
+}
+
+/* ===========================
+   NAVEGAÇÃO
+   =========================== */
+nav {
+    position: sticky;
+    top: 0;
+    background-color: rgb(0, 100, 38);
+    padding: 15px 20px;
+}
+
+nav > ul {
+    list-style-type: none;
+    color: lightgreen;
+    font-size: 30px;
+    max-width: 300px;
+    display: flex;
+    gap: 250px;
+}
+
+nav ul li a {
+    color: #FFFFFF;
+}
+
+nav ul li a:hover {
+    color: #22C55E;
+}
+
+/* ===========================
+   SEÇÃO HOME
+   =========================== */
+#home {
+    background: url("./images/063_1367457228.jpg") center / cover no-repeat;
+    background-position: top;
+    color: #fff;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 #home h1 {
     font-size: 50px;
 }
@@ -130,11 +129,50 @@ label {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-section {
-    padding: 80px 20px;
-    text-align: center;
+/* ===========================
+   CONTEÚDO PRINCIPAL
+   =========================== */
+main {
+    flex: 1;
+    padding: 20px;
+    background-image: url("./images/Giannis-Antetokounmpo-Wallpaper-Free-Download-1.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
+#conquistas-profissionais {
+    text-align: center;
+    color: #22C55E;
+}
+
+#conquistas-profissionais > ul {
+    display: inline-block;
+    text-align: left;
+    font-size: 18px;
+    text-shadow: 1px 1px 2px black;
+}
+
+/* ===========================
+   IMAGENS
+   =========================== */
+.imagem {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.imagem img {
+    width: 300px;
+    height: 200px;
+    max-width: 300px;
+    max-height: 200px;
+    margin: 0 auto;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+/* ===========================
+   FORMULÁRIO
+   =========================== */
 form {
     display: flex;
     flex-direction: column;
@@ -149,11 +187,14 @@ form label {
     font-weight: bold;
 }
 
-form input, form textarea {
+form input,
+form textarea {
     text-align: center;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    width: 100%;
+    transition: all 0.2s ease-in-out;
 }
 
 form button {
@@ -167,46 +208,80 @@ form button:hover {
     background-color: #22C55E;
 }
 
-legend {
-    color: #22C55E;
-    font-size: 22px
+/* Foco em inputs/textarea */
+input:focus,
+textarea:focus {
+    border: 2px solid green;
+    background-color: #f0f8ff;
+    outline: none;
 }
 
+/* Checkbox personalizado */
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    accent-color: green;
+    cursor: pointer;
+}
+
+input[type="number"]:invalid {
+    border: 2px solid red;
+    background-color: #ffebeb;
+}
+
+input[type="number"]:invalid + span {
+    color: red;
+    font-size: 14px;
+    margin-left: 10px;
+    visibility: visible;
+}
+/* ===========================
+   RODAPÉ
+   =========================== */
 footer {
     text-align: center;
     padding: 30px;
-    background-color: #111; /* Um preto um pouco mais suave */
-    color: #ccc; /* Cinza claro para o texto */
+    background-color: #111;
+    color: #ccc;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.footer-links, .footer-creditos {
+.footer-links,
+.footer-creditos {
     margin-bottom: 15px;
 }
 
 footer a {
-    color: #22C55E; 
+    color: #22C55E;
     text-decoration: none;
-    margin: 0 10px; 
+    margin: 0 10px;
     transition: color 0.3s;
     display: block;
     padding: 5px;
 }
 
 footer a:hover {
-    color: #FFFFFF; 
+    color: #FFFFFF;
 }
 
 footer p {
     font-size: 0.9em;
-    color: #888; 
+    color: #888;
     margin: 5px 0;
 }
 
-/* Deixei a linha de copyright mais destacada :) */
 .footer-copyright p {
     color: #ccc;
     font-size: 1em;
+}
+
+/* ===========================
+   LINKS EXTERNOS
+   =========================== */
+a[href^="http"] {
+    color: greenyellow;
+    text-decoration: underline;
+    font-weight: bold;
 }
