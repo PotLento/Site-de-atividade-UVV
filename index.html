@@ -5,166 +5,206 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tributo a Giannis Antetokounmpo</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
+    
+    <script src="script.js" defer></script>
 </head>
 
 <body>
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#origem">Origem</a></li>
-            <li><a href="#conquistas-profissionais">Conquistas</a></li>
-            <li><a href="#contato">Contato</a></li>
-        </ul>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">Giannis Tribute</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavegacao">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="menuNavegacao">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#origem">Origem</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#conquistas-profissionais">Conquistas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
+
+    <div class="container main-container my-4 p-4">
         
-        <section id="home">
-            <h1>Giannis Antetokounmpo</h1>
-            <h2>Seja bem-vindo ao site do grego mais conhecido da atualidade!</h2>
+        <section id="home" class="text-center mb-5">
+            <h1 class="display-4 fw-bold">Giannis Antetokounmpo</h1>
+            <h2 class="lead">Seja bem-vindo ao site do grego mais conhecido da atualidade!</h2>
         </section>
 
         <main>
-
-        <section id="sobre">
-            <h2>Sobre Giannis</h2>
-            <P id="p1">
-                Giannis Antetokounmpo é um jogador greco-nigeriano profissional de basquetebol que atualmente joga pelo Milwaukee Bucks da National Basketball Association (NBA).
-            </p>
-        </section>
-            <hr>
-        <section id="origem">
-            <h3>Origem</h3>
-            <P id="p2">
-                Nascido na Grécia de pais nigerianos, Antetokounmpo começou a jogar basquete nas equipes juvenis do Filathlitikos em Atenas.
-                Em 2011, ele começou a jogar pela equipe sênior do clube antes de entrar no draft da NBA de 2013, onde foi selecionado pelos Bucks como a 15º escolha geral.
-                A combinação de tamanho, velocidade e habilidades de manuseio de bola de Antetokounmpo levou ao seu apelido de "Greek Freak (Aberração Grega)".
-            </p>
-        </section>
-            <hr>
-        <section id="conquistas-profissionais">
-            <h3>Conquistas Profissionais</h3>
-            <ul>
-                <li>9x All Star</li>
-                <li>2021 NBA Champ</li>
-                <li>9x All-NBA</li>
-                <li>2013-14 All-Rookie</li>
-                <li>5x All-Defensive</li>
-                <li>2016-17 Most Improved</li>
-                <li>2x MVP</li>
-                <li>2019-20 Def. POY</li>
-                <li>2020-21 AS MVP</li>
-                <li>2020-21 Finals MVP</li>
-                <li>NBA 75th Anniv. Team</li>
-                <li>2024-25 IST MVP</li>
-            </ul>
-        </section>
-
-        <section id="media">
-            <h2>Galeria de Mídia</h2>
-            <figure>
-                <figcaption>Melhores Momentos: Giannis anota 50 pontos para garantir o título da NBA.</figcaption>
-                <video class="center" controls width="600">
-                        <source src="./videos/Giannis 50 piece.mp4" type="video/mp4">
-                        <track kind="subtitles" srclang="pt-BR" src="./sub/Giannis 50 piece.vtt" label="legendas pt-BR">
-                </video>
-            </figure>
-
-            <figure>
-                <figcaption>Como pronunciar Giannis Antetokounmpo?</figcaption>
-                <audio class= "center" controls>
-                    <source src="./audios/How to Pronounce Giannis Antetokounmpo (Correctly).mp3" type="audio/mpeg">
-                </audio>
-            </figure>
-
-            <figure>
-                <figcaption>Biografia de Giannis Antetokounmpo</figcaption>
-                <iframe class="center" width="640" height="360"
-                src="https://www.youtube.com/embed/J0xvscXER9Q"
-                title="Biografia em vídeo de Giannis Antetokounmpo"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen>
-                </iframe>
-            </figure>
-
-            <figure class="imagem">
-                <figcaption>Giannis em quadra</figcaption>
-                <img src="./images/063_1367457228.jpg" alt="Giannis enterrando a bola." />
-                <img src="./images/giannis-antetokounmpo-reacts.jpg" alt="Giannis gritando com o troféu de campeão da NBA." />
-            </figure>
-        </section>
-
-        <section id="contato">
-            <h2>Caso queira entrar em contato com o criador:</h2>
-            <hr>
-            <form>
-                <P id="p3">
-                <label for="nome">Nome:</label> <br>
-                <input type="text" id="nome" name="nome" required autofocus autocomplete="on" placeholder="Luiz Felipe" />
+            <section id="sobre" class="mb-5">
+                <h2 class="text-success border-bottom pb-2">Sobre Giannis</h2>
+                <p id="p1" class="fs-5">
+                    Giannis Antetokounmpo é um jogador greco-nigeriano profissional de basquetebol que atualmente joga pelo Milwaukee Bucks da National Basketball Association (NBA).
                 </p>
+            </section>
+
+            <section id="origem" class="mb-5">
+                <h3 class="text-success">Origem</h3>
+                <p id="p2">
+                    Nascido na Grécia de pais nigerianos, Antetokounmpo começou a jogar basquete nas equipes juvenis do Filathlitikos em Atenas.
+                    Em 2011, ele começou a jogar pela equipe sênior do clube antes de entrar no draft da NBA de 2013, onde foi selecionado pelos Bucks como a 15º escolha geral.
+                    A combinação de tamanho, velocidade e habilidades de manuseio de bola de Antetokounmpo levou ao seu apelido de "Greek Freak (Aberração Grega)".
+                </p>
+            </section>
+
+            <section id="conquistas-profissionais" class="mb-5">
+                <h3 class="text-success">Conquistas Profissionais</h3>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">9x All Star</li>
+                    <li class="list-group-item">2021 NBA Champ</li>
+                    <li class="list-group-item">9x All-NBA</li>
+                    <li class="list-group-item">2013-14 All-Rookie</li>
+                    <li class="list-group-item">5x All-Defensive</li>
+                    <li class="list-group-item">2016-17 Most Improved</li>
+                    <li class="list-group-item">2x MVP</li>
+                    <li class="list-group-item">2019-20 Def. POY</li>
+                    <li class="list-group-item">2020-21 AS MVP</li>
+                    <li class="list-group-item">2020-21 Finals MVP</li>
+                    <li class="list-group-item">NBA 75th Anniv. Team</li>
+                    <li class="list-group-item">2024-25 IST MVP</li>
+                </ul>
+            </section>
+
+            <section id="media" class="mb-5">
+                <h2 class="text-success border-bottom pb-2">Galeria de Mídia</h2>
                 
-                <P id="p4">
-                <label for="email">E-mail:</label> <br>
-                <input type="email" id="email" name="email" required autofocus autocomplete="on" placeholder="emailaqui@gmail.com" />
-                </p>
+                <div class="row g-4 mt-2">
+                    
+                    <div class="col-12 col-md-6">
+                        <figure class="figure w-100">
+                            <figcaption class="figure-caption mb-2">Melhores Momentos: Giannis anota 50 pontos.</figcaption>
+                            <div class="ratio ratio-16x9">
+                                <video controls class="rounded">
+                                    <source src="./videos/Giannis 50 piece.mp4" type="video/mp4">
+                                    <track kind="subtitles" srclang="pt-BR" src="./sub/Giannis 50 piece.vtt" label="legendas pt-BR">
+                                    Seu navegador não suporta vídeo.
+                                </video>
+                            </div>
+                        </figure>
+                    </div>
 
-                <P id="p5">
-                <label for="mensagem">Mensagem:</label> <br>
-                <textarea id="mensagem" name="mensagem" required autofocus autocomplete="on" placeholder="Escreva sua mensagem aqui!"></textarea>
-                </p>
+                    <div class="col-12 col-md-6">
+                        <figure class="figure w-100">
+                            <figcaption class="figure-caption mb-2">Como pronunciar Giannis Antetokounmpo?</figcaption>
+                            <audio controls class="w-100 mt-3">
+                                <source src="./audios/How to Pronounce Giannis Antetokounmpo (Correctly).mp3" type="audio/mpeg">
+                            </audio>
+                        </figure>
+                    </div>
 
-                <P id="p6">
-                <label for="telefone"> Telefone:</label> <br>
-                <input type="text" maxlength="15" 
-                required autofocus autocomplete="on" placeholder="(99) 99999-9999">
-                <input type="reset" value="Limpar">
-                </p>
+                    <div class="col-12">
+                        <figure class="figure w-100">
+                            <figcaption class="figure-caption mb-2">Biografia de Giannis Antetokounmpo</figcaption>
+                            <div class="ratio ratio-16x9">
+                                <iframe src="https://www.youtube.com/embed/J0xvscXER9Q" title="Biografia" allowfullscreen class="rounded"></iframe>
+                            </div>
+                        </figure>
+                    </div>
 
-                <fieldset>
-                    <legend>Você gosta de Giannis Antetokounmpo?</legend>
-                    <input type="radio" name="Giannis" id="rdSim" value="p">
-                    <label for="rdSim">Sim <br> </label>
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-12 col-md-6 mb-3">
+                                <figure class="figure">
+                                    <img src="./images/063_1367457228.jpg" class="figure-img img-fluid rounded shadow" alt="Giannis enterrando a bola." />
+                                    <figcaption class="figure-caption">Giannis enterrando.</figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <figure class="figure">
+                                    <img src="./images/giannis-antetokounmpo-reacts.jpg" class="figure-img img-fluid rounded shadow" alt="Giannis com troféu." />
+                                    <figcaption class="figure-caption">Giannis Campeão.</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-                    <input type="radio" name="Giannis" id="rdNão" value="w">
-                    <label for="rdNão">Não <br> </label> 
-                </fieldset>
+            <section id="contato" class="mb-5 p-4 bg-light rounded border">
+                <h2 class="text-success">Contato</h2>
+                <hr>
+                <form action="#" method="POST">
+                    <div class="mb-3">
+                        <label for="nome" class="form-label">Nome:</label>
+                        <input type="text" class="form-control" id="nome" name="nome" required placeholder="Luiz Felipe">
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="email" class="form-label">E-mail:</label>
+                        <input type="email" class="form-control" id="email" name="email" required placeholder="email@exemplo.com">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="mensagem" class="form-label">Mensagem:</label>
+                        <textarea class="form-control" id="mensagem" name="mensagem" rows="3" required placeholder="Escreva sua mensagem..."></textarea>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="telefone" class="form-label">Telefone:</label>
+                        <input type="text" class="form-control" id="telefone" maxlength="15" placeholder="(99) 99999-9999">
+                    </div>
+                    
+                    <div class="mb-3">
+                        <input type="reset" class="btn btn-secondary btn-sm" value="Limpar">
+                    </div>
+
+                    <fieldset class="mb-3 border p-2 rounded">
+                        <legend class="fs-6">Você gosta de Giannis Antetokounmpo?</legend>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="Giannis" id="rdSim" value="p">
+                            <label class="form-check-label" for="rdSim">Sim</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="Giannis" id="rdNão" value="w">
+                            <label class="form-check-label" for="rdNão">Não</label>
+                        </div>
+                    </fieldset>
+                    
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" name="Aceito" id="chkaceito" value="p">
+                        <label class="form-check-label" for="chkaceito">Aceito os termos de uso de dados</label>
+                    </div>
                 
-                <legend>Aceite os termos de uso de dados</legend>
-                <label>
-                  <input type="checkbox" name="Aceito" id="chkaceito" value="p">
-                  Aceito os termos de uso de dados
-                </label>
-            
-                <h4>Escolha um apelido de Giannis Antetokounmpo</h4>
-                <br>
-                <select name="Idioma do Apelido" id="slcidiomadoapelido">
-                    <option value="Giannis"> Greek Freak</option>
-                    <option value="Giannis"> Aberração Grega</option>
-                    <br>
-                </select>
+                    <div class="mb-3">
+                        <h4>Escolha um apelido</h4>
+                        <select class="form-select" name="Idioma do Apelido" id="slcidiomadoapelido">
+                            <option value="Greek">Greek Freak</option>
+                            <option value="Aberracao">Aberração Grega</option>
+                        </select>
+                    </div>
 
-                <button type="submit">Enviar</button>
-            </form>
-        </section>
-    </main>
+                    <button type="submit" class="btn btn-success w-100">Enviar</button>
+                </form>
+            </section>
+        </main>
 
-    <footer>
-    <div class="footer-links">
-        <a href="https://github.com/PotLento" target="_blank">GitHub</a>
-        <a href="https://www.linkedin.com/in/luiz-felipe-monteiro-3740a7323/" target="_blank">LinkedIn</a>
-        <a href="#home">Voltar ao Topo</a>
-    </div>
-    <div class="footer-creditos">
-        <P id="p7">Desenvolvido por Luiz Felipe Monteiro.</p>
-        <P id="p8">Fontes: NBA.com, Wikipedia.</p>
-    </div>
-    <div class="footer-copyright">
-        <P id="p9">&copy; 2025 Giannis Antetokounmpo - Todos os direitos reservados.</p>
+        <footer class="bg-dark text-white text-center py-3 mt-4 rounded">
+            <div class="footer-links mb-2">
+                <a href="https://github.com/PotLento" target="_blank" class="text-white me-2">GitHub</a> |
+                <a href="https://www.linkedin.com/in/luiz-felipe-monteiro-3740a7323/" target="_blank" class="text-white ms-2 me-2">LinkedIn</a> |
+                <a href="#home" class="text-white ms-2">Voltar ao Topo</a>
+            </div>
+            <div class="footer-creditos small">
+                <p id="p7" class="m-0">Desenvolvido por Luiz Felipe Monteiro.</p>
+                <p id="p8" class="m-0">Fontes: NBA.com, Wikipedia.</p>
+            </div>
+            <div class="footer-copyright mt-2">
+                <p id="p9" class="m-0">&copy; 2025 Giannis Antetokounmpo - Todos os direitos reservados.</p>
+            </div>
+        </footer>
     </div>
 
-</footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
