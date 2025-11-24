@@ -19,3 +19,40 @@ section {
 nav {
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
+
+.toggle-dark {
+    position: fixed;
+    top: 15px;
+    right: 20px;
+    z-index: 9999;
+
+    padding: 10px 12px;
+    font-size: 20px;
+    border: none;
+    border-radius: 50%;
+    background: #212529;
+    color: white;
+    cursor: pointer;
+}
+
+.dark-theme {
+    background-color: #111 !important;
+    color: #f1f1f1 !important;
+}
+
+.dark-theme .card {
+    background-color: #222 !important;
+    color: #fff !important;
+}
+
+.dark-theme .list-group-item {
+    background-color: #222 !important;
+    color: #fff !important;
+}
+
+
+
+.dark-mode:hover {
+    background: #343a40;
+}
+
