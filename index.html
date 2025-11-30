@@ -17,7 +17,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-success sticky-top">
         <div class="container">
-            <a class="navbar-brand" href="#home">Giannis Tribute</a>
+            <a class="navbar-brand" href="#home">Tributo a Giannis Antetokounmpo</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavegacao">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -153,6 +153,27 @@
                             </div>
                         </div>
                         </div>
+                    </div>
+            </section>
+
+            <section id="mural-fas" class="mb-5 p-4 rounded border bg-light">
+                <h2 class="text-success border-bottom pb-2">Mural de Fãs</h2>
+                <p>Deixe sua mensagem de apoio para o Greek Freak!</p>
+
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-body">
+                        <div class="mb-3">
+                            <textarea class="form-control" id="texto-post" rows="3" placeholder="Escreva algo sobre o Giannis..."></textarea>
+                        </div>
+                        <div class="text-end">
+                            <button class="btn btn-success" onclick="adicionarPost()">
+                                <i class="fas fa-paper-plane"></i> Postar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="feed-posts">
                     </div>
             </section>
 

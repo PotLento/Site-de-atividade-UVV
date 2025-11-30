@@ -50,9 +50,17 @@ nav {
     color: #fff !important;
 }
 
-
-
 .dark-mode:hover {
     background: #343a40;
 }
 
+.dark-theme #mural-fas {
+    background-color: #222 !important; 
+    border-color: #444 !important; 
+}
+
+.dark-theme textarea {
+    background-color: #333;
+    color: #fff;
+    border-color: #555;
+}
